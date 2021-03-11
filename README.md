@@ -9,7 +9,7 @@ System Design
 GUI
 -----
 
-<img src="/Website/Images/gui.png" alt="System GUI" style="height: 100px; width:100px;"/>
+<img src="/Website/Images/gui.png" alt="System GUI" style="height: 30px; width:30px;"/>
 
 Documentation
 ---------
