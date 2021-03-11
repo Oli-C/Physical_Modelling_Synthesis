@@ -1,6 +1,11 @@
 # Physical_Modelling_Synthesis
 An acoustic plucked string model using digital waveguides and Moorer reverberator.
 
+Documentation
+---------
+
+System documentation is available via the following link: https://oli-c.github.io/PMS/Home.html
+
 System Design
 ----------
 
@@ -10,8 +15,3 @@ GUI
 -----
 
 <img src="/Website/Images/gui.png" alt="System GUI" style="height: 30px; width:30px;"/>
-
-Documentation
----------
-
-Background and system documentation is available via the following link: 
