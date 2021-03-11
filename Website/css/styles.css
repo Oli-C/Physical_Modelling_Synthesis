@@ -1,0 +1,126 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.8;
+    color: black;
+    background-color: white;
+    size: 12px;
+    text-align: justify;
+}
+
+h6{
+    color: rgb(142,142,147);
+    text-align: center;
+
+}
+
+h2{
+
+    text-align: center;
+}
+
+main {
+    color: black;
+}
+
+nav {
+    background: white;
+}
+
+margin {
+    margin-bottom: 14px;
+}
+
+ol {
+    counter-reset: item;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+dd{
+    text-align: left;
+
+
+}
+
+/* Audio Player */
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* For pictures in Analysis */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div, iframe {
+    margin: 0 auto;
+}
+
+iframe {
+    display: block;
+    border-style:none;
+}
+
+.IMGcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.IMGequation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.IMGcode{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.IMGsmall{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.bg-1 {
+    background-color: white;
+
+}
+.bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+
+header img {
+    height: 80px;
+}
+
+header {
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+footer {
+    background-color: white;
+
+}

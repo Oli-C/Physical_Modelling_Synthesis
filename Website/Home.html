@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+
+    Website made by University of York student Y3589110 for the Electronic Engineering
+    module Physical Modelling Synthesis.
+
+    -->
+
+    <title>Physical Modelling Synthesis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-lwght bg-light">
+    <a class="navbar-brand">Physical Modelling Synthesis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <ul class="navbar-nav ml-5">
+
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="System.html">System</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Analysis.html">Analysis</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link " href="References.html">References</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Appendix.html">Appendix</a>
+        </li>
+
+    </ul>
+</nav>
+
+<!-- First Container -->
+<div class="container">
+
+    <br>
+    <h3 class="margin">Abstract</h3>
+
+    <p>
+        This website explores physical modelling synthesis of a plucked string combined with a reverberator to produce a
+        range of ambient tones and drum timbres.
+    </p>
+
+    <hr>
+
+    <h3 class="margin">Introduction</h3>
+    <p>Physical modelling synthesis incorporates the use of modern day computational power to model the complex physical
+        characteristics and acoustics of real world sound. This includes musical instruments and audio effects.
+
+        The fundamental design of physical models can be constructed by using Newton’s famous three laws of motion by
+        the equation shown in figure 1.
+    </p>
+
+    <img src="images/fma.png" alt="F = MA Equation" class="IMGsmall">
+
+    <br>
+
+    <h6 class="margin">Figure 1 - Newton’s F = ma [1]</h6>
+
+    <br>
+    <p>
+        Due to the simplicity of Newtonian mechanics, simplifications have to be made conserving audio quality but
+        reducing complexity and computational time. There are a wide range of physical-models and they use a combination
+        of mathematical techniques as linked below [2].
+    </p>
+
+    <li><a href="http://mathworld.wolfram.com/OrdinaryDifferentialEquation.html"
+           onmouseover="return escape('Click for http://mathworld.wolfram.com/OrdinaryDifferentialEquation.html')">Ordinary
+        Differential Equations</a> (ODE)
+    </li>
+    <li><a href="http://mathworld.wolfram.com/PartialDifferentialEquation.html"
+           onmouseover="return escape('Click for http://mathworld.wolfram.com/PartialDifferentialEquation.html')">Partial
+        Differential Equations</a> (PDE)
+    </li>
+    <li><a href="https://ccrma.stanford.edu/~jos/filters/Difference_Equation_I.html"
+           onmouseover="return escape('The <i>difference equation</i> is a recipe for computing samples of the output signal of a digital filter based on samples of the input signal and the filter coefficients.  In an Infinite-Impulse-Response (IIR) digital filter, there are typically both feedforward and feedback coefficients in the difference equation. &nbsp;—&nbsp; Click for https://ccrma.stanford.edu/~jos/filters/Difference_Equation_I.html')">Difference
+        Equations</a></li>
+    <li><a href="https://ccrma.stanford.edu/~jos/pasp/Finite_Difference_Schemes.html"
+           onmouseover="return escape('Click for https://ccrma.stanford.edu/~jos/pasp/Finite_Difference_Schemes.html')">Finite
+        Difference Schemes</a></li>
+    <li><a href="https://ccrma.stanford.edu/~jos/filters/State_Space_Filters.html"
+           onmouseover="return escape('Click for https://ccrma.stanford.edu/~jos/filters/State_Space_Filters.html')">State
+        Space Models</a>
+    </li>
+    <li><a href="https://ccrma.stanford.edu/~jos/filters/Transfer_Function_Analysis.html"
+           onmouseover="return escape('The <i>transfer function</i> is defined for LTI filters as the z transform of the filter output signal, divided by the z transform of the filter input signal &nbsp;—&nbsp; Click for https://ccrma.stanford.edu/~jos/filters/Transfer_Function_Analysis.html')">Transfer
+        Functions</a></li>
+    <li><a href="https://ccrma.stanford.edu/~jos/filters/Modal_Representation.html"
+           onmouseover="return escape('Click for https://ccrma.stanford.edu/~jos/filters/Modal_Representation.html')">Modal
+        Representations</a>
+    </li>
+    <li><a href="http://search.freefind.com/find.html?id=3891388&amp;pageid=r&amp;mode=ALL&amp;query=Equivalent+Circuit"
+           onmouseover="return escape('Click for http://search.freefind.com/find.html?id=3891388&amp;pageid=r&amp;mode=ALL&amp;query=Equivalent+Circuit')">Equivalent
+        Circuits</a>
+    </li>
+    <li><a href="https://ccrma.stanford.edu/~jos/pasp/Wave_Digital_Filters.html"
+           onmouseover="return escape('Wave Digital Filters (WDF) digitize analog circuits element-by-element using the bilinear transform and virtual traveling waves. &nbsp;—&nbsp; Click for https://ccrma.stanford.edu/~jos/pasp/Wave_Digital_Filters.html')">Wave
+        Digital Filters</a> (WDF)
+    </li>
+    <li><a href="https://ccrma.stanford.edu/~jos/pasp/Digital_Waveguides.html"
+           onmouseover="return escape('Click for https://ccrma.stanford.edu/~jos/pasp/Digital_Waveguides.html')">Digital
+        Waveguide</a> (DW) Networks
+    </li>
+    </ul>
+
+    <hr>
+    <h3 class="margin">Background</h3>
+    <br>
+    <h5 class="margin">Karplus-Strong Algorithm</h5>
+    <p>
+        In 1983, Kevin Karplus and Alex Strong were students at Stanford University researching wavetable synthesis.
+        They
+        published a paper titled "Digital Synthesis of Plucked-String and Drum Timbres" [3] which outlined their
+        experimentation of a new type of wavetable synthesis. They discovered that low-pass filtering the wavetable on
+        every pass changed the timbre. As the name of the paper suggests, this sounded similar to a plucked string and
+        was later developed into drums and wind instruments.
+    </p>
+    <br>
+
+    <h5 class="margin">1D Wave Equation & Travelling Wave Solution</h5>
+    <p>
+        An ideal lossless string (shown in figure 2) can be solved for any string that is infinitely long.
+    </p>
+
+    <img src="images/String.png" alt="Ideal String Image" class="IMGcenter">
+    <br>
+    <h6 class="margin">Figure 2 - Ideal Vibrating String. [4]</h6>
+    <br>
+
+    <p>
+        The pluck (regardless of shape) travels with a speed that is equal to the square root of spring tension divided
+        by the mass over length of string. The equation is shown in figure 3.
+    </p>
+
+    <img src="images/speed.png" alt="Speed Equation" class="IMGequation">
+    <h6 class="margin">Figure 3 - String shape propagation speed in lossless ideal string [5]</h6>
+    <br>
+
+    <p>
+        The partial differential equation derived from this model was solved by d’ Alembert [6] to give a solution
+        to a travelling 1D wave for a string:
+    </p>
+
+    <img src="images/travel.png" alt="Travelling Wave Solution" class="IMGequation">
+    <br>
+    <h6 class="margin">Figure 4 - Travelling Wave Solution. [7]</h6>
+    <br>
+    <p>
+        Assuming string slope is much less than 1, the solution is derived which demonstrates that y(t,x) can be
+        represented by two wave functions. This shows that the physical state of a string can be converted to an
+        equivalent pair of traveling components, one right and one left going (Yr and Yl respectively). Figure 5
+        depicts this in a plucked string.
+    </p>
+
+    <img src="images/components.png" alt="Travelling Wave Solution" class="IMGcenter">
+    <br>
+    <h6 class="margin">Figure 5 - Travelling Wave Components. [8]</h6>
+    <br>
+    <p>
+        In figure 5 we can visualise the traveling wave components. The string is plucked in the three points marked P
+        giving it the initial shape. The pluck shape is then released and the top point at time 0 then starts to travel
+        down and outwards at speed c. The actual wave shape can be considered as the sum of the two superpositioned
+        smaller waves, as given in figure 4. In the real world we don't see this occur exactly, this is because we
+        don't have an infinite string length and it is very difficult to pluck a perfectly shaped triangle. A
+        visualization of the resultant wave is shown in figure 6.
+    </p>
+
+    <img src="images/componentmoves.gif" alt="Animation of resultant wave compenents" class="IMGequation"> <br>
+
+    <h6 class="margin">Figure 6 - Resultant Wave Animation. [9]</h6>
+    <br>
+
+    <p>
+        Note: This simulation of the string is clamped either end and there is no dampening upon reflection, resulting
+        in a perfect phase inversion. In reality, the oscillation would decay over time due to dampening characteristics
+        of the string and its environment.
+    </p>
+    <br>
+
+    <h5 class="margin">Digital Waveguide Model </h5>
+
+    <p>
+        d'Alembert's solution can be converted to digital delay lines by discretizing the 1D travelling wave solution.
+        To do this, the travelling wave amplitude is sampled along the string and a sampling interval is defined. This
+        means a digital waveguide model can be generated which provides a digital simulation of the travelling-wave
+        solution. This is shown in figure 7.
+    </p>
+
+    <img src="images/dw.png" alt="Digital Implementation of a lossless waveguide system." class="IMGcode">
+    <br>
+    <h6 class="margin">Figure 7 - Digital Implementation of a lossless waveguide system. [10]</h6>
+
+    <br>
+
+    <h5 class="margin">Uses of Digital Waveguides </h5>
+
+    <p>
+        In the 1980s, there were many techniques used for digital music synthesis. These were methods such as frequency
+        modulation, subtractive synthesis, additive synthesis and the use of wavetables. In 1983 Karplus and Strong
+        explained that these synthesis techniques sounded rich but required large amounts of computational power [3].
+        Whereas, in comparison, algorithms which model a plucked-string can produce good quality sounds and use less
+        arithmetic. It is worth noting that it is not a completely fair comparison, as the other synthesis techniques
+        are more versatile and can produce a wider range of sounds, but computers weren’t powerful in 1983.
+
+        In 1994, the plucked-string digital waveguide model was first commercially used in the Yamaha VL1 synthesiser
+        [11]. This synthesizer used physical modelling to produce sounds
+        that no one had really ever heard before at the time. Yamaha acknowledged their licensed use of Julius O.
+        Smith’s work as base to produce the DSP (digital signal processing) chips within the synthesiser. Interestingly,
+        Yamaha marketed the VL1 as ‘Virtual Acoustics’, which is their choice of renaming physical modelling. It is not
+        clear why Yamaha did this. The VL1 is difficult to play and even more difficult to master. This is because the
+        user is given a wide range of controls and physical models can be very sensitive to minor adjustments. However,
+        if mastered, the VL1 was a high performing real-time synthesizer which could model acoustic instruments.
+
+        Examples of the diverse range of sounds Yamaha developed are explored here:
+    </p>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nQ9rjothqco" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    <br>
+
+    <h5 class="margin">Digital Waveguide Plucked String Model </h5>
+
+    <p>
+        The karplus-strong (KS) algorithm shown in figure 8 is a simplified digital waveguide synthesis model. It is
+        used to model an ideal vibrating string with no stiffness and a defined dampening characteristic. The
+        implementation loops the waveform around the signal chain and is modified by the filter each period. The
+        dampening characteristic used by KS is a two-point moving average filter, this is shown as [1 + 1/Z]/2. It
+        behaves as a first order low-pass filter.
+    </p>
+
+    <img src="images/ksalgo.png" alt="Block Diagram of Karplus-Strong algorithm." class="IMGcode">
+    <br>
+    <h6 class="margin">Figure 8 - Block Diagram of Karplus-Strong algorithm. [12]</h6>
+
+
+    <p>
+        The algorithm produces reasonable and somewhat realistic sounds of a string pluck. It is close to the sound of a
+        guitar, but not completely realistic. A range of timbres can be produced through the manipulation of the pluck
+        position, pickup and reflection coefficient.
+    </p>
+
+    <br>
+
+    <h5 class="margin">Moorer Reverberator</h5>
+
+    <p>
+        A reverberator imitates the acoustics of a natural space. Artificial reverb adds the impression of ambience to
+        an acoustic signal that is ‘Dry’. We can create virtual spaces through the use of filtering algorithms. In the
+        1960s Schroeder introduced the concept of artificial reverb by connecting tapped delay lines to parallel comb
+        filters passed into a series of all-pass filters. Tapped delay lines simulate the early reflections within a
+        space. The parallel comb filters increase the density of the early reflections to produce a reverb tail. The
+        allpass filters then simulate the final late reverb by increasing the density of reflections even more. In
+        1979, James Moorer developed Manfred Schroeder’s work by introducing a lowpass filter inside the comb filters
+        [13].
+        The reverb is characterized by the comb filtering due to its uneven frequency response and the low pass
+        filtering imitates the usual room acoustics of fast high frequency roll-off.
+
+        This allows for frequency dependent reverb time control and results in a more natural sound. The design can be
+        seen in figure 9.
+
+    </p>
+
+
+    <img src="images/blockmoorer.png" alt="Block Diagram of Moorer Reverb" class="IMGcenter">
+    <h6 class="margin">Figure 9 - Block Diagram Moorer Reverb. [12]</h6>
+
+
+</div>
+
+<br>
+<!-- Footer -->
+<footer class="container text-center">
+    <p>Y3589110</p>
+</footer>
+
+</html>
