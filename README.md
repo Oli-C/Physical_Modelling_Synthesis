@@ -1,7 +1,61 @@
 # Physical_Modelling_Synthesis
 An acoustic plucked string model using digital waveguides and Moorer reverberator.
 
- <h3 class="margin">Ambient Plucks</h3>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Website made by University of York student Y3589110 for the Electronic Engineering
+    module Physical Modelling Synthesis.
+    -->
+
+    <title>Physical Modelling Synthesis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body style="height:1500px">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-lwght bg-light">
+    <a class="navbar-brand">Physical Modelling Synthesis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <ul class="navbar-nav ml-5">
+
+        <li class="nav-item">
+            <a class="nav-link " href="Home.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link disabled" href="System.html">System</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Analysis.html">Analysis</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link " href="References.html">References</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Appendix.html">Appendix</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- First Container -->
+<div class="container">
+    <br>
+    <h3 class="margin">Ambient Plucks</h3>
 
     <p>
         A system has been programmed in MATLAB to explore these models. It combines an adaptation of the
@@ -64,3 +118,15 @@ An acoustic plucked string model using digital waveguides and Moorer reverberato
     </P>
     <img src="images/gui.png" alt="GUI for Ambient Pluck System" class="IMGequation">
     <h6 class="margin">Figure 13 - GUI for Ambient Pluck System.</h6>
+
+
+</div>
+
+<br>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>Y3589110</p>
+</footer>
+
+</body>
+</html>
